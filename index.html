@@ -6,10 +6,10 @@
     <title>Your Landing Page</title>
     <style>
         body {
-            font-family: Comic Sans, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #add8e6; /* Pastel blue */
         }
         .container {
             max-width: 800px;
@@ -39,14 +39,35 @@
         .cta-button:hover {
             background-color: #0056b3;
         }
+        .link-container {
+            margin-top: 50px;
+        }
+        .link {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #ff7f50; /* Orange */
+            border: 2px solid #ff7f50; /* Orange */
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .link:hover {
+            color: #fff;
+            background-color: #ff7f50; /* Orange */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p>This site is for Nicole Fong</p>
-        <a href="#" class="cta-button">Resume</a>
-            <a href="https://github.com/NFong1122/NFong1122.github.io/blob/main/Resume%20NF%20(1).pdf" target="_blank">View My CV</a> 
+        <h1>Welcome to Our Website</h1>
+        <p> This site is for Nicole Fong</p>
+        <div class="link-container">
+            <a href="https://github.com/NFong1122/NFong1122.github.io/blob/main/Resume%20NF%20(1).pdf" class="link" target="_blank">View Resume</a>
+            <a href="https://www.linkedin.com/in/nicole-al-fong/" class="link" target="_blank">View Linkedin</a>
+        </div>
     </div>
 </body>
 </html>
